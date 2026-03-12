@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
+<!-- CSS é um exemplo declarativo pq é onde se define as regras de estilo -->
 <style>
 table, th, td {
-  border:1px solid black;
+  border:1px solid black; 	<!-- definição de tamanho, borda, cor e estilo da tabela -->
   border-collapse: collapse;
 }
 </style>
 
+<!-- HTML é um exemplo declarativo também, pq é onde se declara a estrutura da página, ñ digo para o navegador como interpretar cada linha, ele apenas vai estruturando -->
 <body>
 
 <h2>Lista de Compras João</h2>
@@ -57,23 +60,31 @@ table, th, td {
 <br>
 <body onload="calcular()">
 
+
+
+<!-- JavaScript é um exemplo IMPERATIVO pq é onde se controla passo a passo da execução, "o que" percorre por "onde" e "como"-->
+
 <script>
 function calcular() {
 
+<!-- pega os elementos -->
   let qtd = document.querySelectorAll(".qtd");
   let preco = document.querySelectorAll(".preco");
 
+<!-- cria uma variavel -->
   let total = 0;
 
+<!-- percorre manualmente -->
   for (let i = 0; i < qtd.length; i++) {
+
+<!-- atualiza o valor -->
     total = total + (qtd[i].textContent * preco[i].textContent);
   }
 
+<!-- altera a página -->
   document.getElementById("totalGeral").textContent = "R$ " + total.toFixed(2);
 }
 </script>
 </body>
 </html>
-
-
 
