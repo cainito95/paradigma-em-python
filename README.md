@@ -1,5 +1,5 @@
 # paradigma-em-python-grupo
-
+Atividade em Python Grupo 1 - Bianca, Leandro, Yuri, Eduardo.
 
 B - Identificar se é uma linguagem interpretada ou compilada;
 
