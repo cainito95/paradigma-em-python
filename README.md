@@ -3,6 +3,8 @@
 
 B - Identificar se é uma linguagem interpretada ou compilada;
 
+Nesse projeto ultilizamos html, que é uma linguem interpretada, pois o navegador apenas lê e interpreta a estrutura para montar a página.
+
 C - Quais as Formas de executar estes arquivos?
 comando para rodar o codigo:
 
