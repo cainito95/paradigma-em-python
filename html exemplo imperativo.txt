@@ -11,6 +11,8 @@ table, th, td {
 
 <h2>Lista de Compras João</h2>
 
+<h1> teste </h1>
+
 <table id="tabela" style="width:100%">
   <tr>
     <th style="width:70%">Produtos</th>
@@ -74,4 +76,5 @@ function calcular() {
 </script>
 </body>
 </html>
+
 
