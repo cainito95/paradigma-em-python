@@ -3,9 +3,8 @@
 
 B - Identificar se é uma linguagem interpretada ou compilada;
 
-C - quais as Formas de executar estes arquivos?
+C - Quais as Formas de executar estes arquivos?
 comando para rodar o codigo:
-python arquivo.py
 
 onde rodar o codigo:
 Visual Studio Code
@@ -13,5 +12,7 @@ PyCharm
 Jupyter Notebook
 
 D - Quais são as formas de declarar variavel nesta linguagem?
+
+No projeto foi ultilizado somente a variável "let". Pórem, existem outras formas de declarar uma variável, como "var" e "const".
 
 E - é uma linguagem fortemente tipada ou francamente tipada? (qual a diferença? exemplos)
