@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<body>
+
+<h2>Lista de Compras João</h2>
+
+<table id="tabela" style="width:100%">
+  <tr>
+    <th style="width:70%">Produtos</th>
+    <th>Quantidade</th> 
+    <th>Valor</th>
+  </tr>
+
+  <tr>
+    <td>Arroz</td>
+    <td class="qtd">2</td>
+    <td class="preco">7.50</td>
+  </tr>
+
+  <tr>
+    <td>Feijão</td>
+    <td class="qtd">1</td>
+    <td class="preco">8.00</td>
+  </tr>
+
+  <tr>
+    <td>Pão</td>
+    <td class="qtd">1</td>
+    <td class="preco">6.20</td>
+  </tr>
+
+  <tr>
+    <td>Leite</td>
+    <td class="qtd">3</td>
+    <td class="preco">4.99</td>
+  </tr>
+
+  <tr>
+    <td>Café</td>
+    <td class="qtd">1</td>
+    <td class="preco">12.51</td>
+  </tr>
+
+  <tr>
+    <td><b>VALOR TOTAL DA COMPRA</b></td>
+    <td colspan="2" id="totalGeral">0.00</td>
+  </tr>
+</table>
+
+<br>
+<body onload="calcular()">
+
+<script>
+function calcular() {
+
+  let qtd = document.querySelectorAll(".qtd");
+  let preco = document.querySelectorAll(".preco");
+
+  let total = 0;
+
+  for (let i = 0; i < qtd.length; i++) {
+    total = total + (qtd[i].textContent * preco[i].textContent);
+  }
+
+  document.getElementById("totalGeral").textContent = "R$ " + total.toFixed(2);
+}
+</script>
+</body>
+</html>
+
